@@ -1,7 +1,67 @@
 /* your styles go here */
 @import url(http://fonts.googleapis.com/css?family=OpenSans:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lora:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn':400,300,700);
+@import 'https://fonts.googleapis.com/css?family=Vollkorn';
 
+.project-content{
+    color:black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .project-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.project-content h1,h2,h3,h4,p{
+    padding-left:25%;
+}
+
+.project-content h2{
+    font-size: 30px;
+    color:coral;
+}
+
+.project-content a{
+    border-bottom: 2px
+}
+
+.project-content a:hover{
+    background-color: aquamarine;
+}
+
+.project-content p{
+  color: black;
+  font-family: 'Vollkorn' serif
+}
+
+.p project-content{
+    color:black;
+    padding-left: 40%;
+}
+/*
+.content-column-content p,
+.content-column-content li {
+  color: #999999;
+}
+.content-column-content ul li {
+  list-style-type: none;
+}
+.content-column-content ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  margin: 0 5px 0 -15px;
+  color: #2065a1;
+}
+*/
 
 .navbar-brand {
     font-family: 'OpenSans';
