@@ -421,36 +421,7 @@ SIDEBAR + RIGHT COLUMN
   margin: 0 5px 0 -15px;
   color: #2065a1;
 }
-.small-navbar {
-  margin-bottom: 20px;
-}
-.small-navbar:before,
-.small-navbar:after {
-  content: " ";
-  display: table;
-}
-.small-navbar:after {
-  clear: both;
-}
-.small-navbar-heading {
-  float: left;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-}
-.small-navbar-heading a {
-  color: #000;
-  text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-.small-navbar-heading a:hover {
-  border-bottom: solid 1px #2065a1;
-  color: #000;
-  text-decoration: none;
-}
+
 /*
 
 =====================
@@ -1265,6 +1236,7 @@ STYLE SWITCHER FOR DEMO
 /* THEMING OF BOOTSTRAP COMPONENTS           */
 /* ========================================= */
 /* nav */
+/*
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -1335,28 +1307,7 @@ STYLE SWITCHER FOR DEMO
     border-bottom-color: #f4f4f4;
   }
 }
-/* navbar */
-.navbar {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  min-height: 80px;
-  margin-bottom: 0;
-  border-top: none;
-  border-bottom: none;
-}
-@media (min-width: 768px) {
-  .navbar {
-    border-radius: 0;
-  }
-}
-.navbar-collapse {
-  max-height: 340px;
-  overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-collapse.in {
-  overflow-y: auto;
-}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse {
     font-size: 14px;
@@ -1518,6 +1469,7 @@ STYLE SWITCHER FOR DEMO
 .navbar-default .navbar-text {
   color: #777777;
 }
+
 .navbar-default .navbar-nav > li > a {
   color: #fc888a;
 }
@@ -1585,7 +1537,7 @@ STYLE SWITCHER FOR DEMO
 .navbar-default .navbar-link:hover {
   color: #2880cc;
 }
-/* dropdowns */
+ dropdowns 
 .dropdown-menu {
   z-index: 1000;
   font-size: 14px;
