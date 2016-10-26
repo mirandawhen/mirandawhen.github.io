@@ -15,9 +15,20 @@
 }
 */
 
+next{
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+
 .project-content{
     margin-left:1.5vw;
     margin-right:15vw; 
+    padding: 16px 16px;
+    margin-top:50px;
+    background-color:white;
+/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+
 }
 
 @media(min-width:500px)
@@ -39,7 +50,7 @@ h3, h4 {
 
 h3 {
     font-size:15px;
-    font-family:"Open Sans";
+    font-family:"Vollkorn";
 }
 
 h4 {
@@ -49,10 +60,23 @@ h4 {
     font-weight: bold;
 }
 
+h2 {
+    font-size:25px;
+    font-family:"Open Sans";
+    font-weight:bold;
+}
+
 p {
     font-family:"Open Sans";
     color:black;
     font-size:14px;
+}
+
+p.quote{
+    font-size:20px;
+    font-style:italic;
+    padding-left:100px;
+    padding-right:100px;
 }
 
 p.project {
@@ -80,7 +104,11 @@ h1.project{
 }
 
 img{
+    height:auto;
     width:100%;
+}
+
+img.tall{
     height:auto;
 }
 
