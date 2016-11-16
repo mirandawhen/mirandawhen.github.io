@@ -11,15 +11,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,300,700,400italic">
+
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/nav.css">
 
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+      
     <!-- owl carousel-->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
@@ -33,7 +37,6 @@
   <body>
     
       
-      
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -46,7 +49,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Resume</a></li>
       </ul>
     </div>
@@ -57,31 +61,44 @@
       
       
     <div class="container-fluid">
-        <div class="project-content">
+        <div class="project-overview">
 
-            <h4 class="project">Overview</h4>
-            <h1 class="project"> Privacy Proxy: Empowering and educationg people to protect personal information on smartphone applications. </h1>
+            <h1 class="project"> <b>Privacy Proxy: </b>Empowering people to protect their personal information on smartphone applications. </h1>
             <!--
             -->
             
             
-            
+            <h2 class="project">Overview</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-lg-8">
                     <p>	During the Fall of 2016, I worked as a UX Designer for Privacy Proxy - an android application that uses crowdsourced data to detect and notify users of personally identifiable information (PII) leaks. I conducted heuristic analysis to propose small scale re-designs and planned remote user testing sessions. I also had the opportunity to dabble in logo design and Android UI development. </p>
-                    
-                    <p>This was my first time acting as the only UX Designer within a team. Because of this, I learned a lot about negotiating roles and taking sole responsibility over design choices. Furthermore, this way my first experience designing and developing for an Android application. Furthermore this was the first time I worked on a product that was at such a high fidelity. It was interesting to see how quickly changes could be implemented to the UI, but with obvious tradeoffs in regards to how complex designs coul be. </p>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <p><b>My Role :</b>Interaction Designer, UX Researcher, Logo Design</p>
-                    <p><b>Team Members: </b> Gaurav Srivastava, Saksham Chitkara </p>
-                    <p><b>Context: </b> Research Project, Fall 2016</p>
-                    <p><b>Lab: </b> CMU Computer Human Interaction: Mobile Privacy Security Lab (CHIMPS Lab)</p>
-                    <p><b>PI: </b> Jason Hong</p>
+
+
+                    <p class="context"><b>My Role: </b>Interaction Designer, UX Researcher, Logo Design</p>
+                    <p class="context"><b>Team Members: </b> Gaurav Srivastava, Saksham Chitkara </p>
+    
+                    <p class="context"><b>Context: </b> Research Project, Fall 2016</p>
+                    <p class="context"><b>Lab: </b> CMU Computer Human Interaction: Mobile Privacy Security</p>
                 </div>
             </div>
         </div>
         <div class="project-content">
+            
+<!--
+            <div id="owl-demo" class="owl-carousel owl-theme" style="width:20%">
+ 
+              <div class="item"><img src="assets/privacyproxy/s1.png" alt="The Last of us"></div>
+              <div class="item"><img src="assets/privacyproxy/s2.png" alt="GTA V"></div>
+
+            </div>
+-->
+            
+            
+
+                
+<!--
             <div class="row">
                 <div class="col-md-6">
                     <img src="assets/privacyproxy/screen2.png">
@@ -92,57 +109,59 @@
                 </div>
             
             </div>
-            <hr>
-            <h2>Heuristic Evaluation</h2>
-            <p>By the time I joined Privacy Proxy, a pre-alpha version of the UI had already been developed. Because of this circumstance, I was unable to propose massive UI overhauls. However, I conducted a heuristic evaluation that resulted in small design changes concerning data visualization, micro UI interactions, and labelling.</p>
+-->
             
+            <h2>Problem Space</h2>
+            <blockquote>
+              <p>"Over 1.4 billion smartphones were sold worldwide in 2015. The growing user base translates into increasing incentive for companies and individuals to enter the mobile app market. However, the wealth of personal information that an app can access through a smartphone poses a serious privacy concern. In particular, personally identifiable information (PII), which is “information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context”, should be treated with the utmost caution."</p>
+              <footer><cite title="Source Title">Kevin Ku</cite></footer>
+            </blockquote>
+            <h4>Problem</h4>
+            <h2>Many users do not realize that smartphone applications can access and collect PII. </h2>
+            
+            <h4>Solution</h4>
+            <h2>Privacy Proxy: An application that that informs and empowers users.</h2>
+            
+            <img src="assets/privacyproxy/features.png">
+            
+            <hr>
+
             
             <div></div>
             <div class="row">
-                <div class="col-md-3">
-                    <img src="assets/privacyproxy/h1.png">
+                <div class="col-md-4">
+                    <h2>Heuristic Evaluation</h2>
+                    <p>I conducted heuristic evaluations and offered solutions to re-design aspects concerning data visualization, micro UI interactions, and labelling.In coming up with design solutions, a major contraint was screen size.</p>
+                    <p>I redesigned the representation of application summary information. I added visual heirarchy and moved a data visualization from the within app screen into the summary app page. In moving this visualization, I recommended a bar chart representation to reduce screen size and to follow good visualization techniques. (Pie charts are suboptimal when comparing more than two categories.) </p>
+                    <p>These design change made information more visible to users and allows users to compare this information between applications. In representing information in such a manner, this information can be actionable for users.  </p>
                 </div>
-                <div class="col-md-3">
-                    <img src="assets/privacyproxy/h2.png">
+                <div class="col-md-4">
+                    <div id="owl-demo2" class="owl-carousel owl-theme" style="width:75%">
+ 
+                        <div class="item"><img src="assets/privacyproxy/g1.png" alt="The Last of us"></div>
+                        <div class="item"><img src="assets/privacyproxy/g2.png" alt="GTA V"></div>
+                        <div class="item"><img src="assets/privacyproxy/g3.png" alt="GTA V"></div>
+
+                    </div>                
                 </div>
-                 <div class="col-md-3">
-                    <img src="assets/privacyproxy/h3.png">
+                 <div class="col-md-4">
+                    <div id="slider" class="owl-carousel owl-theme" style="width:75%">
+ 
+                        <div class="item"><img src="assets/privacyproxy/g4.png" alt="The Last of us"></div>
+                        <div class="item"><img src="assets/privacyproxy/g5.png" alt="GTA V"></div>
+                    </div>                 
                 </div>   
-                <div class="col-md-3">
-                    <img src="assets/privacyproxy/h4.png">
-                </div> 
             </div>
                         
             
             <hr>
             
-            
-            <h2>Logo Design</h2>
-            <div class="row">
-                <div class="col-md-5">
-                    <p> Coming up with an actual logo and formatting it properly for Android development was very difficult. My teammates specifically wanted a logo that avoided cliches (i.e. locks, shields, and keys). They also constrained the design to include a dial to evoke a sense of user control. I ended up doing a lot of extra research in order to format the logo properly. </p>
-                    <p>After a lot of consultation with my team, I came up with this design. </p>
-                    <p>This was particularly challenging because I had never done logo design sepifically for Android. I spent a lot of time self-teaching the Andriod UI guidelines.</p>
-                        
-                    <img src="assets/privacyproxy/draftlogo.png">
-
-                </div>
-                <div class="col-md-7">
-                    <img src="assets/privacyproxy/logolow.jpg" height="40">
-                    <img src="assets/privacyproxy/Icon-Final.png">
-                </div>
-            </div>
-                
-        
-                            
-            
-
-            <hr>
             <h2>Research</h2>
-            <p>We are currently in the process of preparing a beta launch of the application. During the beta launch, we will have participants use the application for a week and conduct remote surveys and usability testing. Stay tuned for more details! </p>
+            <p>I'm currently in the process of conducting usability studies. Stay tuned for more details! </p>
+            
+<!--            <p>This was my first time acting as the only UX Designer within a team. Because of this, I learned a lot about negotiating roles and taking sole responsibility over design choices. Furthermore, this way my first experience designing and developing for an Android application. Furthermore this was the first time I worked on a product that was at such a high fidelity. It was interesting to see how quickly changes could be implemented to the UI, but with obvious tradeoffs in regards to how complex designs coul be. </p>-->
 
             </div>
-        </div>
       
         <br>
             <div class="row">
@@ -171,16 +190,7 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/front.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-    <!---->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <script src="js/slider.js"></script>
+
   </body>
 </html>
