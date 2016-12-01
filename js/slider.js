@@ -1,50 +1,26 @@
-        $(document).ready(function() {
+var slideIndex = 1;
+showSlides(slideIndex);
 
-          $("#owl-demo").owlCarousel({
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-              // "singleItem:true" is a shortcut for:
-              // items : 1, 
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-          });
-            
-          $("#owl-demo2").owlCarousel({
-
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
-
-              // "singleItem:true" is a shortcut for:
-              // items : 1, 
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
-
-          });
-            
-            $("#slider").owlCarousel({
-
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true
-
-              // "singleItem:true" is a shortcut for:
-              // items : 1, 
-              // itemsDesktop : false,
-              // itemsDesktopSmall : false,
-              // itemsTablet: false,
-              // itemsMobile : false
-
-          });
-
-        });
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}

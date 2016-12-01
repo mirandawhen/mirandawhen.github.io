@@ -420,3 +420,12 @@ a:active {
   -ms-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
+
+
+
+
+div.test {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
