@@ -1,146 +1,250 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Peer Learning</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Google fonts - Open Sans-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,300,700,400italic">
+    <title>Replay</title>
 
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Vollkorn" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
-    <link rel="stylesheet" href="css/nav.css">
+<!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Jquery-->
+    <script src ="https://code.jquery.com/jquery-latest.min.js"></script>
+<!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,700" rel="stylesheet">
 
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-      
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel='shortcut icon' href='../assets/favicon.ico' type='image/x-icon'/ >
+    <link rel = "stylesheet" href= "project-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
   </head>
+    
   <body>
-    
+    <nav class="nav-down">
+        <a href="http://www.vidazhang.com" class="logo">
+            <img class="logo-img" src="../assets/Logo.png" alt="Logo">
+        </a>
+        <ul>
+            <li class="dropdown"><a class='menu current dropdown-toggle' data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../projects/darpa.html">-1-&nbsp Privacy Policy Manager</a></li>
+                    <li><a class='current-proj' href="../projects/replay.html">-2-&nbsp Replay</a></li>
+                    <li><a href="../projects/course.html">-3-&nbsp Design My Semester</a></li>
+                    <li><a href="../projects/crowdverify.html">-4-&nbsp CrowdVerify</a></li><br>
+                    <li><a target="_blank" href="https://pathways-162314.appspot.com/">-5-&nbsp Pathways&nbsp ></a></li>
+                    <li><a href="../projects/others.html">-6-&nbsp Other Works and Experience</a></li>
+                </ul>
+            </li>
+            <li><a class='menu' href="index.html">Home</a></li>
+            <li><a class='menu' href="https://drive.google.com/file/d/0B3qe-lvQwFmLdWtXNTJUSzlUTUE/view?usp=sharing" target="_blank">Resume</a></li>
+        </ul>
+    </nav>  
       
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Miranda Nguyen</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Resume</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-      
-
-      
-      
-    <div class="container-fluid">
-        <div class="project-overview">
-            <h2 class="project">Overview</h2>
-            <h1 class="project"> <b>Peer Learning:</b> Examining ways that peer interactions and technology drive learning.  </h1>
-            <!--
-            -->
-            
-            
-            
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-lg-8">
-                    <p>	During the Fall of 2016, I conducted a series of research projects that focused on the application and asessment of educational systems. I examined ways that peer interactions drive learning and identified design patterns that support to learning. Drawing upon theory from psychology, HCI, and learning science literature, I designed and evaluated different learning designs. </p>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <p class="context"><b>My Role: </b>UX Researcher </p>
-                    <p class="context"><b>Team Members: </b> Anuraag Jain </p>
-                    <p class="context"><b>Context: </b> Designing Large-Scale Peer Learning Systems, Fall 2016</p>
-                </div>
+    <div class="sidebar project-sidebar">
+        <div class="project-sum hidden">
+            <h5>Replay</h5>
+            <div id="tags">
             </div>
+<!--            <h4>Product Design, Visual Design, Passion Project</h4>-->
+<!--            <a class='details back-home hidden' href="../index.html">< &nbspBack to Home</a>-->
         </div>
-        <div class="project-content">
-        <div class="centered-content"> 
-        <h2>Study 1</h2>
-        <h4>Research Questions</h4>
-        <p>How do groups brainstorm effectively? The primary goal of this study was to identify features for successful group brainstorming and to explain these features with principles from psychology and learning science.</p>
-        <h4>Methods and Design</h4>
-        <p>Three groups of students from creative disciplines were observed. Between these groups, factors such as experience, familiarity between members, and project type varied. Each observation session was followed by a contextual interview with one group member. </p>
-        <h4>Findings</h4>
-        <p>The observations reveal that students need support to better prepare themselves to conduct collaborative, creative work such as brainstorming. Students need the necessary resources, expertise, and intra-group dynamics to conduct successful collaborative work. In identifying different features of group brainstorming, more preparation is necessary to warrant the wide use of brainstorming.</p>
         
-        <hr>
-        <h2>Study 2</h2>   
-        <h4>Research Question</h4>   
-        <p>How can peers help each other produce better notes? To address the cognitive burderns associated with realtime note-taking, we designed a new task flow that incorporated collaborative note-taking and peer feedback. </p>
-        <h4>Methods and Design</h4>
-        <p>To test the new task flow, we piloted an experiment using Mechanical Turk. We analyzed data
-            by coding results by quality of notes, quality of feedback, and assessing learning with a post-task test.</p>
-        <h4>Findings</h4>
-        <p>Due to sample size, were were unable to conduct a robust statistical analysis. However, qualitative interviews demonstrated that our design had a positive impact on learning, with multiple participants stating that they would like to try the technique in class. Further research is underway.</p>
-        
-        </div> 
-        </div>
-      </div>
-        <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6" style="padding-right:0px">
-                    <a class="btn btn-primary btn-lg sharp" href="ambient.html">Previous</a>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6" style="padding-right:0px">
-                        <a class="btn btn-primary btn-lg sharp" href="umbrella.html">Next</a>
-
-<!--                    <button type="button" class="btn btn-primary btn-lg sharp">Next</button>-->
-                </div>
-            </div>
-      
-
-            
-
-        
-        
+    </div>
     
 
-    <!-- Javascript files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"> </script>
-    <script src="js/ekko-lightbox.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-<!--    <script src="js/front.js"></script>-->
-    <script src="js/slider.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-    <!---->
+    <div id="works">
+        <div class='project project-details'>
+            <div class="space30px"></div>
+            <div class="space15px"></div>
+<!--             <h3 class="project-number">- 2 -</h3>
+ -->            <h1>Evaluating Peer Learning</h1>
+
+            
+            <h4>August - December 2017<br>
+            Learning with Peers at Massive Scale, taught by Chinmay Kulkarni
+            </h4>
+            <p>Learning with peers helps students reflect, generalize knowledge and apply it more successfully to new problems. Over the semester, I conducted multiple small-scale studies to examine how technology may enrich learning between peers.</p>
+                
+<!--         <div class="space5px"></div>
+            <span class="label">Product Design</span>
+            <span class="label">Visual Design</span>
+            <span class="label">Passion Project</span>
+            <div class="space15px"></div><br> -->
+            
+                        
+            <h3 id='s1' class='section'>THE QUESTION</h3> 
+            
+            <h2>How is brainstorming useful for groups in creative disciplines?</h2>
+            <p>Brainstorming is an activity often prescribed in creative programs to promote group work. But, simply telling students to brainstorm together is not enough. I aimed to figure out features that represented succesful group work.
+                                
+            <br>  
+                
+            <br><br>
+          
+            <div class="space15px"></div><br>
+            <h3 id='s2' class='section'>FRAMEWORKS</h3> 
+            <h2>Brainstorming involves the generation, evaluation, and refinement of ideas.</h2>
+            <p>Previous literature frames has emphsazied brainstorming as an activity focused on the generation of ideas. However, this investigation focuses on the open-ended nature of brainstorming as an explorative activity</p>
+            <h2>Don't forget the "group" in group brainstorming</h2>
+            <p>To ensure that individual members have equal ownership and influence over the entire design, participation in brainstorming activities is necessary. As such, joint participation is emphasized when considering successful group brainstorming.</p>
+
+     
+<!--
+                <ul class="text-list">
+                    <li>They want to make sure they get a reasonable amount of content - they can only dedicate <b>a limited amount of time</b> to learning. </li>
+                <li>They would use it for <b>career focused</b> blogs. </li>
+                <li>This service is seen more as <b>a "learning" platform</b> rather than just to keep up with industry trends. </li>
+                <li>They would prefer to use this service on <b>mobile</b> because they can read anytime</li>
+                <li>They need a <b>good reading experience</b> (as good as other platforms such as Medium)</li>
+            </ul>
+-->
+            <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/Replay/Research.png" alt="Final Design Preview">
+            </div>
+            <h4>User research helped determine my product vision.</h4>
+
+
+            
+            <div class="space15px"></div>
+            <h3 id='s3' class='section'>METHODS</h3>
+                <p><b>Participants</b></p>
+                <li>Architecture Students</li>
+                
+                <p><b>Analysis</b></p>
+                <h2>Find a common ground in user goals and business goals</h2>
+                <p>The vision I have for Replay is <b>to help people build professional skills through reading previously published but high-quality blog posts</b>. Users and the product have different goals, but I believe it's possible to find a common ground.</p>
+<!--            <p>For example, easily accessible social sharing options would increase product awareness, while having a unlimited feed can help users focus achieve their learning goal without getting overwhelmed.</p>-->
+            
+            <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/Replay/goals.png" alt="User goals and business goals">
+            </div>
+            <h4>Achieving a balance and finding a common ground in user and business goals.</h4>
+<!--
+                     <ul class="text-list">
+                         <li><b>User Goal: </b>help the user achieve their goal (career development)</li>
+                   <li><b>Business Goal:</b> increase user engagement with the app </li>
+                    <li><b>Business Goal: </b>encourage social sharing to spread brand awareness</li></ul>
+-->
+                
+        
+            <div class="space15px"></div>
+            <h3 id='s4' class='section'>FINDINGS</h3>
+            <h2>Members can utilize tools and techniques to articulate ideas to the group</h2>
+            <p>Participation in group brainstorming is constrained by the type of resources available for communication. Furthermore, mastery and expertise in different mediums also impacted participation.</p>
+
+            <h2>Synchronous Conversation facilitates immediate feedback and quick refinements</h2>
+             <h4>“You can discuss things really quickly and simply. You need to hear other people’s perspectives as you’re coming up with ideas.”</h4>
+            <p>Synchronous conversation is a feature for successful brainstorming because it mediates immediate feedback that, in turn, supports the brainstorming activities of joint generation and refinement.</p>
+
+
+            <h2>Members Demonstrate that an Individual’s Contribution is Socially Relevant</h2>
+            <p>Participation in group brainstorming is constrained by the type of resources available for communication. Furthermore, mastery and expertise in different mediums also impacted participation.</p>
+
+            <h2>Groups Have Access to a Space Where They are Not Interrupted.</h2>
+            <p>Participation in group brainstorming is constrained by the type of resources available for communication. Furthermore, mastery and expertise in different mediums also impacted participation.</p>
+
+
+                
+
+
+                <p><b>Findings</b></p>
+                <ul class="text-list">
+                <li>It makes sense to target users in the tech industry as a starting point, as there are a lot of resources in this industry and these blog platforms rooted in the tech industry have shown success.</li>
+                <li>MyBridge users liked the "only 10 articles a day" model.</li>
+                <li>Progress tracking is a shared important aspect of all the education apps.</li>
+                <li>All the reading apps have the following features: 1. favorite/save 2. categorization 3. Blog recommendations</li>
+                </ul>
+                
+
+        
+            <div class="space15px"></div>
+            <h3 id='s5' class='section'>DISCUSSION</h3>
+            <h2>Prioritizing the features based on user research</h2>
+          <p>Based on user research and competitive analysis, I decided to include the following  features that <b>provide the most value to users in the MVP:</b></p>
+                <ul class="text-list">
+                <li>See the blog posts they can/should read today</li>
+                <li>Favorite a blog post and see all of them in one place</li>
+                <li>Progress bar for each blog</li>
+                <li>See all blogs</li>
+                </ul>
+<!--
+                    <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/CrowdVerify/hero.png" alt="CrowdVerify Hero">
+                    </div>
+                    <h4>Sample terms are shown in cards and key sentences are highlighted</h4>
+-->
+            <div class="project-img-div-long">
+                        <img class="project-img-long" src="../assets/Replay/all-screens.png" alt="Replay screen design">
+                </div>
+            <h4>High-fidelity app design overview</h4>
+            
+
+             
+          <div class="space15px"></div>
+            <h3 id='s6' class='section'>CONCLUSIONS</h3>
+            <h2>Use strategies to help users maximize their learning</h2>
+            <p>There are two different ways to measure whether users are maximizing their learning experience in Replay: 1. Number of articles read intentionally; 2. Number of blogs sites that they finish reading. I used the following strategies to achieve these goals.  
+          </p>
+          <div class="project-img-div-long">
+                        <img class="project-img-long" src="../assets/Replay/motivation.png" alt="Motivational design">
+          </div>
+          <br><br>
+          <h2>Be mindful of human factors</h2>
+          <p>This is a detail that I paid attention to during user testing. The original filter design allows more space to show blog titles, but when user wants to exit out of it, it's really hard to reach the "X" icon. In the next iteration, I reduced the height of the filter overlay to about half of the screen to make the experience more "human finger friendly".</p>
+          <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/Replay/Human-factor.png" alt="human factors">
+          </div>
+        <br><br>
+          <h2>Creating an awesome reading experience through visual design</h2>
+          <p>I decided to use Helvetica for all the typography in this app, because I want a typeface that everyone finds familiar and has great legibility. I also used different font weights, colors, and sizes to create a clear information hierarchy.</p>
+          <div class="project-img-div-med">
+                        <img class="project-img-med" src="../assets/Replay/reading-exp.png" alt="reading experience">
+          </div><br>
+          
+            <div class="space15px"></div>
+            <h3 id='s7' class='section'>REFLECTIONS</h3>
+
+                <p>As a student that takes classes in creative disciplines, this project was very useful for  myself. It helped me understand ways to better work in creative groups. Some lessons I learned include the following:  
+                </p>
+          <ul class="text-list">
+                <li>Defining success in academic settings is difficult and contingent on your pedagogical framework </li>
+                <li>Build upon <b>current work</b> to supplement existing bodies of knowledge</li>
+                <li><b>Visual design is a crucial part of the overall experience</b>, especially when the function of the app is heavily dependent on the information hierarchy and legibility of the content.</li>
+                </ul>
+
+            
+                
+
+        
+            <div class="jump">
+                <a class='details previous' href="darpa.html" data-toggle="tooltip" title="-1- Privacy Policy Manager">< &nbspPrevious Project</a>
+                <a class='details next' href="course.html" data-toggle="tooltip" title="-3- DesignMySemester">Next Project&nbsp ></a>
+            </div>
+            
+        </div>
+        
+<!--        <div id='bottom-space'></div>-->
+        <footer>© designed and coded by Vida Zhang</footer>
+    </div>
+ 
+
+    
+<!--JS-->
+    <script src ="js/myscript.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Google Analytics-->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      // ga('create', 'UA-91244637-1', 'auto');
+      // ga('send', 'pageview');
+
+    </script>        
+
   </body>
 </html>
+  
